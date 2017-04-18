@@ -1,5 +1,6 @@
 def start_q2(from, to)
-  ops = ["+","-","*","/",""]
+  # ops = ["+","-","*","/",""] 
+  ops = ["*",""] # 減號除號皆無法湊滿千位數,而加號滿足千位的只有1000~1008,亦無用
   (from..to).each do |num|
     num_a = num.to_s.split("")
     result = [num_a[0]].product(ops,[num_a[1]],ops,[num_a[2]],ops,[num_a[3]])
