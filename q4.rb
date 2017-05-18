@@ -1,6 +1,6 @@
 def cut(m,n,bars)
   if bars == n
-    0
+    0 # recursion ending condition
   elsif bars > n
     puts "Error appear, bars never greater than n."
   else
